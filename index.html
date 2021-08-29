@@ -9,29 +9,33 @@
 <body>
 
     <main>
-        <p>Come Join The World of Fun! Click below to get started!</p>
-        <button onclick="myFunction()">Start</button>
+        <p> Hi there! Click below to get started!</p>
+        <button onclick="getStarted()">Start</button>
           <p id="info"></p>
+        <button type="button" onclick="display()">New Message</button>
     </main>
 
-    <script>
-      function myFunction() 
+    <script>  
+      function getStarted() 
       {
         let text;
         let person = prompt("Please enter your name:", "Your Name");
         let age = prompt("Please enter your age", "your age");
-        if (person == null || person == "" && age == null || age <= 18) 
+        if (person == null || person == "" && age == null || age < 18) 
         {
             text = "Ooops! Seems like you're not old enough! Maybe in a few years.";
         } 
         else {
-            text = "Hello " + person + "! Welcome!";
+            text = "Hello " + person + "! Press F12 on your keyboard to view the message in the console view.";
+            console.log("Hi " + person + "! Did you find me? If you did, congrats!");
         }
         document.getElementById("info").innerHTML = text;
-        }
-
-        
+        }    
     </script>
+    <script>
+        document.write(Date());
+    </script>
+    <script src="/javascript/myScript.js"></script>
 
 </body>
 </html>
