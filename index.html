@@ -12,7 +12,8 @@
         <p> Hi there! Click below to get started!</p>
         <button onclick="getStarted()">Start</button>
           <p id="info"></p>
-        <button type="button" onclick="display()">Try Me</button>
+     <a href="pagetwo.html">Click here for more</a>
+
     </main>
     <script>  
       function getStarted() 
@@ -27,10 +28,13 @@
         else {
             text = "Hello " + person + "! Press F12 on your keyboard to view the message in the console view.";
             console.log("Hi " + person + "! Did you find me? If you did, congrats!");
+            
+
         }
-        document.getElementById("info").innerHTML = text;
+        document.getElementById("info").innerHTML = text, image;
         }    
     </script>
+    <br>
     <script>
         document.write(Date());
     </script>
